@@ -443,7 +443,8 @@ body {
     max-height: 500;
     position: relative;
     display: flex;
-    width: 50%;
+    max-width: 720px;
+    width: 100%;
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
