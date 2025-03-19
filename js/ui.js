@@ -941,4 +941,9 @@ function findDupes(arr) {
         }, []);
     
     return filteredarr
-} 
+}
+
+function sanitizeshot(str) {
+    var snstr = str.replaceAll(" ","_");
+    return snstr
+}

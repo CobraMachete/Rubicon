@@ -1685,3 +1685,8 @@ function triggerFailure(theerror) {
         fireAnim("sendErr");
     }, 2000);
 }
+
+function sanitizeshot(str) {
+    var snstr = str.replaceAll(" ","_");
+    return snstr
+}

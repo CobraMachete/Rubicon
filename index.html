@@ -25,6 +25,21 @@
         <script>
             $(document).ready(function() {
 
+
+                var pkgsearchbox = document.getElementById("packagesearchbar");
+
+
+                //EVENT LISTENER FOR PACKAGE SEARCH BOX
+                pkgsearchbox.addEventListener('input', function(e) {
+                    
+                    var targinput = event.target.value;
+                    var sanshot = sanitizeshot(targinput);
+                    
+                    // PUSHING THE SANITIZED TEXT BACK TO FIELD
+                    pkgsearchbox.value = sanshot;
+
+                });
+
                 console.log('document ready')
                 $('#shotstable').hide();
 
@@ -158,7 +173,7 @@
             var thrdItemsFinished = false;
 
             
-
+            
 
         </script>
         <div id="widget">
